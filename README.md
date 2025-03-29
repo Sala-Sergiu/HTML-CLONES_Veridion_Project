@@ -9,7 +9,7 @@ It's recommended to use a virtual environment.
 Installation
 Clone the repository:
 
-bashCopy
+Copy
 
 git clone https://github.com/Sala-Sergiu/HTML-CLONES_Veridion_Project.git
 cd HTML-CLONES_Veridion_Project
@@ -17,19 +17,19 @@ Create and activate a virtual environment:
 
 On Linux/Mac:
 
-bash Copy
+Copy
 
 python3 -m venv venv
 source venv/bin/activate
 On Windows:
 
-bash Copy
+Copy
 
 python -m venv venv
 venv\Scripts\activate
 Install dependencies:
 
-bash Copy
+Copy
 
 pip install -r requirements.txt
 Running the Application
@@ -42,7 +42,7 @@ group_visual.py: Uses functions from visual_similarity.py to process a directory
 To run the grouping task:
 Make sure you have your HTML files organized in a folder (e.g., clones/tier3). Then run:
 
-bash Copy
+Copy
 
 python group_visual.py --input_dir clones/tier3 --screenshot_dir screenshots --output_json output/tier3.json --output_csv output/tier3.csv --error_output output/errors.json --image_threshold 0.3 --port 8000 --max_workers_features 4 --max_workers_pairs 4 --use_indexing
 Parameters:
@@ -66,7 +66,7 @@ Parameters:
 To test similarity between two HTML files:
 You can use the testing mode in visual_similarity.py directly. For example:
 
-bash Copy
+Copy
 
 python visual_similarity.py --file1 path/to/first.html --file2 path/to/second.html --screenshot_dir screenshots --port 8000
 This will output the CSS-based and SSIM-based similarity scores and save the screenshots.
