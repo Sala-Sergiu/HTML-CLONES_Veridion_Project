@@ -34,9 +34,11 @@ group_visual.py: Uses functions from visual_similarity.py to process a directory
 To run the grouping task:
 Make sure you have your HTML files organized in a folder (e.g., clones/tier3). Then run:
 
-Copy: python group_visual.py --input_dir clones/tier3 --screenshot_dir screenshots --output_json output/tier3.json --output_csv output/tier3.csv --error_output output/errors.json --image_threshold 0.3 --port 8000 --max_workers_features 4 --max_workers_pairs 4 --use_indexing
-Parameters:
+Copy: python group_visual.py --input_dir clones/tier3 --screenshot_dir screenshots --output_json output/tier3.json --output_csv output/tier3.csv --error_output output/errors.json --image_threshold 0.7 --port 8000 --max_workers_features 4 --max_workers_pairs 4 --use_indexing
 
+(change --image-treshold for different output)
+
+Parameters:
 --input_dir: The directory containing the HTML files (e.g., clones/tier3).
 --screenshot_dir: Directory where screenshots will be saved.
 --output_json and --output_csv: Paths for the output files listing the groups.
