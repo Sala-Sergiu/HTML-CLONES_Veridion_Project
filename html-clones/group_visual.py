@@ -181,6 +181,7 @@ if __name__ == "__main__":
     parser.add_argument("--port", type=int, default=8000, help="Portul pentru serverul HTTP local")
     parser.add_argument("--max_workers_features", type=int, default=1, help="Numărul maxim de fire pentru procesarea fișierelor")
     parser.add_argument("--max_workers_pairs", type=int, default=1, help="Numărul maxim de fire pentru compararea perechilor")
+    parser.add_argument("--use_indexing", action="store_true", help="Folosim indexarea pentru a reduce comparațiile")
     args = parser.parse_args()
 
     # Creăm directoarele pentru output, dacă nu există
